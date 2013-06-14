@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/deepak/crash/55_45b/files'
+let g:netrw_dirhist_2='/usr/share/awesome'
+let g:netrw_dirhist_3='/usr/share/awesome/lib'
+let g:netrw_dirhist_4='/usr/share/awesome/lib/awful'
+let g:netrw_dirhist_5='/home/deepak/.config/awesome_mine'
+let g:netrw_dirhist_6='/home/deepak/.config/awesome_mine/vicious'
+let g:netrw_dirhist_7='/home/deepak/.config/awesome-copycats'
+let g:netrw_dirhist_8='/home/deepak/.config/awesome-copycats/themes'
+let g:netrw_dirhist_9='/home/deepak/.config/awesome-copycats/themes/powerarrow-darker'
