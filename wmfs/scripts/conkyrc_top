@@ -1,5 +1,5 @@
 out_to_console yes
-out_to_x no
+#out_to_x no
 background yes
 update_interval 1
 total_run_times 0
@@ -9,7 +9,7 @@ default_color FFFFFF #blanc
 default_shade_color 333333
 default_outline_color black
 
-use_xft yes
+#use_xft yes
 
 color0 EEEEEE #normal
 color1 B3B3B3 #gris

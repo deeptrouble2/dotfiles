@@ -1,5 +1,5 @@
 out_to_console yes
-out_to_x no
+#out_to_x no
 background yes
 update_interval 1
 total_run_times 0
@@ -9,7 +9,7 @@ default_color FFFFFF #blanc
 default_shade_color 333333
 default_outline_color black
 
-use_xft yes
+#use_xft yes
 
 color0 EEEEEE #normal
 color1 B3B3B3 #gris
@@ -30,5 +30,9 @@ TEXT
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/pacman.png]^s[left;\#FDA53C; ${top name 1}${top cpu 1}]\
 ^s[left;\#444444; |]\
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/pacman.png]^s[left;\#A6D4E0; ${top_mem name 1}${top_mem mem 1}]\
+^s[left;\#444444; |]\
+^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#A6D4E0; ${upspeed eth1}]\
+^s[left;\#444444; |]\
+^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_down_01.png]^s[left;\#A6D4E0; ${downspeed eth1}]\
 ^s[left;\#444444; |]\
 ^i[right;0;0;/home/deepak/.config/wmfs/icons/status/fox.png]^s[right;\#D8ADFF; ${nodename}]\
