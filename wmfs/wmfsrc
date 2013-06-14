@@ -1,0 +1,270 @@
+#
+# WMFS2 configuration file
+#
+
+# Possible file inclusion:
+@include "~/.config/wmfs/keys"
+
+
+[themes]
+
+  [theme]
+     # My sexy beautiful and amazing theme
+     name = "greygreen"
+     #font = "-misc-tamsyn-medium-r-normal--12-87-100-100-c-60-iso8859-1"
+     font = "-*-termsyn.icons-medium-*-*-*-14-*-*-*-*-*-*-*"
+     # Bars
+     bars_width = 19
+     bars_fg = "#CCCCCC"
+     bars_bg = "#111111"
+     # Element tags
+     tags_normal_fg = "#7D7D7D"
+     tags_normal_bg = "#222222"
+     #tags_normal_statusline = ""
+     tags_sel_fg = "#222222"
+     tags_sel_bg = "#BDE077"
+     #tags_sel_statusline = ""
+     tags_occupied_fg = "#CCCCCC"
+     tags_occupied_bg = "#444444"
+     #tags_occupied_statusline = "*"
+     tags_urgent_fg = "#7D7D7D"
+     tags_urgent_bg = "#FDA53C"
+     #tags_urgent_statusline = "\R[0;11;20;1;#CC0000]\R[0;0;20;1;#CC0000]"
+     tags_border_color = "#050505"
+     tags_border_width = 0
+     # Frame / Client
+     client_normal_fg = "#3C3C3C"
+     client_normal_bg = "#1C1C1C"
+     client_normal_statusline = "\s[right;#FDA53C; ··· Off ]"
+     client_sel_fg = "#BBBBBB"
+     client_sel_bg = "#404040"
+     client_sel_statusline = "\s[left;#BDE077; ···] \s[right;#BDE077;··· Active ]"
+     frame_bg = "#FFFFFF"
+     #client_titlebar_width = 14
+     client_border_width = 0
+  [/theme]
+
+  [theme]
+     name = "blue"
+     font = "-*-termsyn.icons-medium-*-*-*-14-*-*-*-*-*-*-*"
+     # Bars
+     bars_width = 17
+     bars_fg = "#b5b5b5"
+     bars_bg = "#050505"
+     # Element tags
+     tags_normal_fg = "#b5b5b5"
+     tags_normal_bg = "#050505"
+     #tags_normal_statusline = ""
+     tags_sel_fg = "#63b8ff"
+     tags_sel_bg = "#303030"
+     #tags_sel_statusline = ""
+     tags_occupied_fg = "#bd8a8c"
+     tags_occupied_bg = "#050505"
+     #tags_occupied_statusline = "\R[0;11;20;1;#63b8ff]"
+     tags_urgent_fg = "#bdbd8a"
+     tags_urgent_bg = "#050505"
+     #tags_urgent_statusline = "\R[0;11;20;1;#CC0000]\R[0;1;20;1;#CC0000]"
+     tags_border_color = "#050505"
+     tags_border_width = 0
+     # Frame / Client
+     client_normal_fg = "#202020"
+     client_normal_bg = "#050505"
+     #client_normal_statusline = "\s[3;9;#7D7D7D;#](1;client_close)"
+     client_sel_fg = "#BBBBBB"
+     client_sel_bg = "#303030"
+     #client_sel_statusline = "\s[3;9;#222222;#](1;client_close)"
+     frame_bg = "#63b8ff"
+     client_titlebar_width = 11
+     client_border_width = 1
+  [/theme]
+
+[/themes]
+
+
+[bars]
+
+  # Position:
+  #
+  # 0  Top
+  # 1  Bottom
+  # 2  Hide
+
+  # Element type:
+  #
+  # t  Tags
+  # s  Statustext (will take available space)
+  # y  Systray (can be set only ONE time among all element)
+  # l  Launcher (will be expended at launcher use)
+
+  [bar]
+     name = testbar
+     position = 0
+     screen = 0
+     elements = "tls"   # element order in bar
+     theme = "blue"
+  [/bar]
+
+  [bar]
+     name = testbar2
+     position = 0
+     screen = 1
+     elements = "tlsy"   # element order in bar
+     theme = "blue"
+  [/bar]
+
+  [bar]
+     name = bottom
+     position = 1
+     screen = 1
+     elements = "s"   # element order in bar
+     theme = "blue"
+  [/bar]
+
+
+# [bar]
+#    position = 0
+#    screen = 1
+#    elements = "ts"
+#    theme = "default"
+# [/bar]
+
+[/bars]
+
+
+[tags]
+
+  # Use no screen option or screen = -1 to set tag on each screen
+  [tag]
+      screen = -1
+      name = "¹ term"
+      # statusline=""
+  [/tag]
+
+  [tag] name = "Ú term2" [/tag]
+  [tag] name = "ê media" [/tag]
+  [tag] name = "´ www" [/tag]
+
+
+  # Mousebinds associated to Tags element button
+  [mouse] button = "1" func = "tag_click" [/mouse]
+  [mouse] button = "4" func = "tag_next"  [/mouse]
+  [mouse] button = "5" func = "tag_prev"  [/mouse]
+
+
+[/tags]
+
+
+[client]
+
+  theme = "greygreen"
+  key_modifier = "Super"
+  focus = click
+  autofocus = true
+
+  [mouse] button = "1" func = "client_focus_click"    [/mouse]
+  [mouse] button = "1" func = "mouse_swap"            [/mouse]
+  [mouse] button = "2" func = "mouse_tab"             [/mouse]
+  [mouse] button = "3" func = "mouse_resize"          [/mouse]
+  [mouse] button = "4" func = "client_focus_next_tab" [/mouse]
+  [mouse] button = "5" func = "client_focus_prev_tab" [/mouse]
+
+[/client]
+
+
+[rules]
+       # Example of rule for MPlayer
+       [rule]
+               instance      = "xv"       # First part of WM_CLASS
+               class         = "MPlayer"  # Seconf part of WM_CLASS, not needed if first part is correct
+               # role        = ""         # WM_WINDOW_ROLE
+               screen        = 0          # Screen to use
+               tag           = 1          # Tag number of apps
+               free          = true       # Set automatic free client
+               max           = false      # Set automatic maximized client
+               follow_client = false      # follow the client
+               ignore_tags   = false      # ignore tag (free mode)
+       [/rule]
+
+       [rule]
+               instance      = "mutt"		# Première partie de WM_CLASS
+               class         = "mutt"		# Seconde partie de  WM_CLASS
+               screen        = 0		# Écran 
+               tag           = 0
+               free          = false		# Mode free (true/false)
+               max           = false		# Client maximisé (true/false)
+               follow_client = true		# Suivre le client (true/false)
+               ignore_tags   = false		# ignorer le layout du tag (mode free)
+       [/rule]
+
+       [rule]
+	       instance      = "mocp"
+               class         = "mocp"
+               screen        = 0
+               tag           = 1
+               follow_client = true
+               ignore_tags   = false
+       [/rule]
+
+       [rule]
+               instance      = "Navigator"
+               class         = "Firefox"
+               screen        = 0
+               tag           = 2
+               follow_client = true
+               ignore_tags   = false
+       [/rule]
+
+       [rule]
+               class         = "chrome"
+               screen        = 1
+               tag           = 3
+               free          = true
+               ignore_tags   = false
+       [/rule]
+
+       [rule]
+               class         = "Google-chrome"
+               screen        = 1
+               tag           = 3
+               free          = true
+               ignore_tags   = false
+       [/rule]
+
+       [rule]
+               class         = "Pidgin"
+               screen        = 1
+               tag           = 3
+               free          = true
+               ignore_tags   = false
+       [/rule]
+
+
+
+       [rule]
+               instance      = "skype"
+               class         = "Skype"
+               screen        = 0
+               tag           = 4
+               follow_client = true
+               ignore_tags   = false
+       [/rule]
+[/rules]
+
+
+[launchers]
+
+  # command can be an uicb function or an uicb function + extension (see example)
+  [launcher]
+     name = "exec"
+     prompt = "  Run:"
+
+     # Example of uicb + ext:
+     #   command = "spawn xterm -e"
+     command = "spawn"
+
+     width = 150
+  [/launcher]
+
+[/launchers]
+
+

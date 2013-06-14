@@ -1,0 +1,25 @@
+[keys]
+  [key] mod = {"Super"}            key = "Return"    func = "spawn" cmd = "urxvtc" [/key]
+  [key] mod = {"Control", "Alt"}   key = "q"         func = "quit" [/key]
+  [key] mod = {"Control", "Alt"}   key = "r"         func = "reload" [/key]
+
+  [key] mod = {"Super"} key = "Right" func = "tag_next" [/key]
+  [key] mod = {"Super"} key = "Left"  func = "tag_prev" [/key]
+
+  [key] mod = {"Super"} key = "n"     func = "screen_next" [/key]
+  [key] mod = {"Super"} key = "q" func = "client_close" [/key]
+  [key] mod = {"Super"} key = "r" func = "launcher" cmd = "exec" [/key]
+
+  [key] mod = { "Super" }   key = "k" func = "client_focus_next" [/key]
+  [key] mod = { "Super" }   key = "j" func = "client_focus_prev" [/key]
+  [key] mod = { "Super" }   key = "f" func = "client_toggle_free" [/key]
+  [key] mod = { "Super" }   key = "m" func = "client_maximize" [/key]
+
+  [key] mod = {"Super", "Shift"} key = "k" func = "client_swap_next"   [/key]
+  [key] mod = {"Super", "Shift"} key = "j" func = "client_swap_prev"  [/key]
+
+  [key] mod = {"Ctrl", "Shift"} key = "k" func = "client_swap_left"   [/key]
+  [key] mod = {"Ctrl", "Shift"} key = "j" func = "client_swap_right"  [/key]
+
+
+[/keys]
