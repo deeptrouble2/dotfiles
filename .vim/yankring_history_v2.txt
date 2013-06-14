@@ -1,11 +1,44 @@
+${cpu cpu1}%,v
+eth1,v
+upspeed,v
+net_up_01,v
+^s[left;\#444444; |]\,V
+^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#76FF7A; ${upspeed eth1}]\,V
+${cpu cpu1}\,V
+ ,v
+ ${cpu cpu1},v
+0,v
+|,v
+[branches2/rel54310_walmart/src] Fixed dataplane thread crash caused by accessing a null pointer in the find target function in termination.c.,v
+mac AA-BB-CC-DD-EE-FF,v
+(,v
+C3DD77,v
+red html code,v
+A6D4E0,v
+red,v
+FF7878,v
+9,v
+color9 FF7878 #pastel red,V
+E8DD9E,v
+rose,v
+FF95D1,v
+color8 FF95D1 #rose,V
+B3B3B3,v
+D8ADFF,v
+BDE077,v
+FFA500,v
+^,v
+\,v
+^s[left;\#A6D4E0; ${downspeed eth1}]\,v
+earths best multigrain cereal,v
+!intf->term_active && ,v
+$130,000: "Product Manager at a tech startup"$140,000: "video editor/producer, freelance"$140,000: "TV Editor"$140,000: "I work for an Amazon subsidiary"$140,000: "mobile software developer"$145,000: "Advertising"$150,000: "I write mobile apps (not freelance)"$160,000 (plus bonus): "Lawyer ",v
 ",v
 p,v
 u,v
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#A6D4E0; ${upspeed}]\^s[left;\#444444; |]\,V
-^s[left;\#444444; |]\,V
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#A6D4E0; ${upspeed}]\,V
 1,v
- ,v
 m,v
 e,v
 _,v
@@ -26,10 +59,7 @@ pacman.png]^s[left;\#A6D4E0; ${top_mem name 1}${top_mem mem 1}]\,v
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/pacman.png]^s[left;\#A6D4E0; ${top_mem name 1}${top_mem mem 1}]\,V
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_down_01.png]^s[left;\#A6D4E0; ${downspeed}]\,V
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^g[left;20;20;\#A6D4E0; ${upspeed}]\,V
-0,v
 minimum_size 1600,V
-upspeed,v
-eth1,v
 double_buffer yes,V
 top_mem,v
 /,v
@@ -64,37 +94,7 @@ unsanctioned,v
  ,V
             PICKLE_DICT_BOOL(pk, "is_interferer", ,V
 ),v
-(,v
 ;intf->is_rogue) num_rogues++;,v
 (intf->rssi*-1 >= rapcfg.rssi_threshold));,v
 rogues,v
     int num_rogues = 0;    struct rapintf *intf = NULL;    int iter = -1;    while ((intf = iterate_intf(intf, &iter)) != NULL) {        if (intf->is_rogue) num_rogues++;    } ,v
-            PICKLE_DICT_BOOL(pk, "is_interferer", (intf->rssi*-1 >= rapcfg.rssi_threshold));,V
-static int num_interferers = 0;,V
-static int num_rogues = 0;,V
-count,v
-channel == channel) count++;,v
-struct rapintf *intf = NULL;    int iter = -1;    while ((intf = iterate_intf(intf, &iter)) != NULL) {        if (intf->channel == channel) count++;    },v
-    struct rapintf *intf = NULL;    int iter = -1;,V
-static int num_unsanctioned = 0;,V
-    char *buffer = NULL;,V
-v["count"][idx],v
-				$(TOP)/src/sys/ssm/inc \,V
-buffer[100];,v
-, sizeof(buffer));,v
-INCDIRS     +=  $(TOP)/src/sys/cc2/super ,V
-(TOP)/src/sys/cc2/rim/inc \,V
-$(TOP)/src/sys/ssm/inc \,v
-                $(TOP)/src/sys/cc2/rim/inc \,V
-$(TOP)/src/sys/cc2/rim/inc \,v
-$(TOP)/src/sys/cc2/cryptlib \,v
-				$(TOP)/src/sys/cc2/cryptlib \,V
-               $(TOP)/src/sys/cc2/rim/inc \,V
-#include "stats/mmi.h",V
-s,v
-    num_stats_intf = 0;,V
-    struct rapintf *intf = NULL;    int iter = -1;    num_stats_intf = 0;    while ((intf = iterate_intf(intf, &iter)) != NULL) {,V
-Too slow, fix this ,v
- {,v
-size_t rap_pickle_channel_map(int channel, DOMAIN_POOL* domain, char** buffer) {,V
-uint16_t,v

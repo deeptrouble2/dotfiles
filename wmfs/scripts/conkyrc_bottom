@@ -20,10 +20,14 @@ color5 FFA500 #camel
 color6 BDE077 #vert
 color7 D8ADFF #mauve
 color8 FF95D1 #rose
+color9 FF7878 #pastel red
+color10 C3DD77 #pastel green
 
  
 TEXT
 ^s[left;\#BBBBBB; ]^i[left;0;0;/home/deepak/.config/wmfs/icons/status/cpu.png] ^s[left;\#BBBBBB; CPU:]^s[left;\#FDA53C; ${cpu}%  ] ^g[left;80;10;${cpu};100;\#333333;\#FDA53C;ckycpu](1;spawn;urxvtc -e htop)\
+^s[left;\#444444; |]\
+^i[left;0;0;/home/deepak/.config/wmfs/icons/status/cpu.png]^s[left;\#76FF7A; ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}% ${cpu cpu4}% ${cpu cpu5}% ${cpu cpu6}%]\
 ^s[left;\#444444; |]\
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/mem.png] ^s[left;\#BBBBBB; MEM:]  ^s[left;\#BDE077; $mem ]^s[left;\#A6D4E0;/$memmax]^s[left;\#BDE077;  $memperc% ]^g[left;80;10;$memperc;100;\#333333;\#BDE077;ckymem](1;spawn;urxvtc -e htop)\
 ^s[left;\#444444; |]\
@@ -31,8 +35,8 @@ TEXT
 ^s[left;\#444444; |]\
 ^i[left;0;0;/home/deepak/.config/wmfs/icons/status/pacman.png]^s[left;\#A6D4E0; ${top_mem name 1}${top_mem mem 1}]\
 ^s[left;\#444444; |]\
-^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#A6D4E0; ${upspeed eth1}]\
+^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#76FF7A; ${upspeed eth1}]\
 ^s[left;\#444444; |]\
-^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_down_01.png]^s[left;\#A6D4E0; ${downspeed eth1}]\
+^s[left;\#FF7878; ${downspeed eth1}]^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_down_01.png]\
 ^s[left;\#444444; |]\
 ^i[right;0;0;/home/deepak/.config/wmfs/icons/status/fox.png]^s[right;\#D8ADFF; ${nodename}]\

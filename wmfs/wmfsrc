@@ -209,9 +209,10 @@
                instance      = "Navigator"
                class         = "Firefox"
                screen        = 0
-               tag           = 2
+               tag           = 3
                follow_client = true
                ignore_tags   = false
+               free          = true
        [/rule]
 
        [rule]
