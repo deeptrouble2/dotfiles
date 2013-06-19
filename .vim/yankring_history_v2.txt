@@ -1,100 +1,100 @@
-${cpu cpu1}%,v
-eth1,v
-upspeed,v
-net_up_01,v
-^s[left;\#444444; |]\,V
-^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#76FF7A; ${upspeed eth1}]\,V
-${cpu cpu1}\,V
- ,v
- ${cpu cpu1},v
-0,v
-|,v
-[branches2/rel54310_walmart/src] Fixed dataplane thread crash caused by accessing a null pointer in the find target function in termination.c.,v
-mac AA-BB-CC-DD-EE-FF,v
+~,v
+kernel,v
+  echo "hello",V
 (,v
-C3DD77,v
-red html code,v
-A6D4E0,v
-red,v
-FF7878,v
-9,v
-color9 FF7878 #pastel red,V
-E8DD9E,v
-rose,v
-FF95D1,v
-color8 FF95D1 #rose,V
-B3B3B3,v
-D8ADFF,v
-BDE077,v
-FFA500,v
-^,v
-\,v
-^s[left;\#A6D4E0; ${downspeed eth1}]\,v
-earths best multigrain cereal,v
-!intf->term_active && ,v
-$130,000: "Product Manager at a tech startup"$140,000: "video editor/producer, freelance"$140,000: "TV Editor"$140,000: "I work for an Amazon subsidiary"$140,000: "mobile software developer"$145,000: "Advertising"$150,000: "I write mobile apps (not freelance)"$160,000 (plus bonus): "Lawyer ",v
-",v
-p,v
-u,v
-^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#A6D4E0; ${upspeed}]\^s[left;\#444444; |]\,V
-^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^s[left;\#A6D4E0; ${upspeed}]\,V
-1,v
-m,v
-e,v
-_,v
-o,v
-t,v
-{,v
-$,v
-},v
-a,v
-n,v
-w,v
-d,v
-g,v
-.,v
-x,v
-pacman,v
-pacman.png]^s[left;\#A6D4E0; ${top_mem name 1}${top_mem mem 1}]\,v
-^i[left;0;0;/home/deepak/.config/wmfs/icons/status/pacman.png]^s[left;\#A6D4E0; ${top_mem name 1}${top_mem mem 1}]\,V
-^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_down_01.png]^s[left;\#A6D4E0; ${downspeed}]\,V
-^i[left;0;0;/home/deepak/.config/wmfs/icons/status/net_up_01.png]^g[left;20;20;\#A6D4E0; ${upspeed}]\,V
-minimum_size 1600,V
-double_buffer yes,V
-top_mem,v
-/,v
-c,v
-(net)	,v
-/home/deepak/.colors/Terminal/colored,v
-./bundle/xterm-color-table.vim/.git,v
-https://github.com/deeptrouble2/dotfiles,v
-toggle_free,v
-  [key] mod = { "Super" }   key = "f" func = "client_toggle_free" [/key],V
-,V
-          client_focus(c);,V
-        || (c = client_gb_frame(W->last_clicked_barwin->win))),V
-     if((c = client_gb_titlebar(W->last_clicked_barwin->win)),V
-     struct client *c;,V
-     (void)cmd;,V
-     struct client *c;     (void)cmd;     if(!(W->client))          return;     W->client->flags ^= CLIENT_FREE;     layout_client(W->client);     /* Set tabbed client of toggled client as free */     if(W->client->flags & CLIENT_TABMASTER)     {          SLIST_FOREACH(c, &W->client->tag->clients, tnext)               if(c->tabmaster == W->client && c != W->client)                    c->flags ^= CLIENT_FREE;     },v
-focus_click,v
-voiduicb_client_focus_click(Uicb cmd){     (void)cmd;     struct client *c;     if((c = client_gb_titlebar(W->last_clicked_barwin->win))        || (c = client_gb_frame(W->last_clicked_barwin->win)))          client_focus(c);},v
-void uicb_client_focus_click(Uicb);,V
-tab_next_opened,v
-     { "client_tab_next_opened",   uicb_client_tab_next_opened },,V
-86400,v
-3,v
-            type uint32 { range "30..86400"; },V
-*,v
-reporters,v
-        memset(intf->reporters, 0, sizeof(intf->reporters));,V
-intf->is_rogue && ,v
-is_terminating,v
-unsanctioned,v
- ,V
-            PICKLE_DICT_BOOL(pk, "is_interferer", ,V
 ),v
-;intf->is_rogue) num_rogues++;,v
-(intf->rssi*-1 >= rapcfg.rssi_threshold));,v
-rogues,v
-    int num_rogues = 0;    struct rapintf *intf = NULL;    int iter = -1;    while ((intf = iterate_intf(intf, &iter)) != NULL) {        if (intf->is_rogue) num_rogues++;    } ,v
+zsh,v
+  unset _DISPLAY,V
+  fi,V
+  if in_svn; then,V
+#,v
+,V
+function svn_get_repo_name() {  if in_svn; then    svn info | sed -n 's/Repository\ Root:\ .*\///p' | read SVN_ROOT    svn info | sed -n "s/URL:\ .*$SVN_ROOT\///p"  fi},v
+function svn_get_branch_name() {  _DISPLAY=$(    svn info 2> /dev/null | \      awk -F/ \      '/^URL:/ { \        for (i=0; i<=NF; i++) { \          if ($i == "branches" || $i == "branches2" || $i == "tags" ) { \            print $(i+1); \            break;\          }; \          if ($i == "trunk") { print $i; break; } \        } \      }'  )    if [ "x$_DISPLAY" = "x" ]; then    svn_get_repo_name  else    echo $_DISPLAY  fi  unset _DISPLAY},v
+You first need to wait until tomorrow once sony uploads the fixed firmware to the playstation website.  Once they do you will need to bring up safe mode on your ps3 and re-install the firmware by selecting option 6.    Do not do a file system restore it will fail!!!!  You will be foreced to reformat your system.  If you call sony they will tell you to do this so dont bother it does not work. So just wait until tomorrow and re-install the firmware fix.PS3 with 500GB HDD and Linux,V
+"I'm an architect but I have been unemployed for six months. There must be something wrong with this country," said Nadia al Husin, holding up a banner calling on the government to do more for education.,V
+    if (!rapcfg.air_term_ch) {,V
+00-23-68-14-CF-C0,v
+    radio->is_terminating = on;,V
+void,v
+    struct smap *ap = device->data;    // Smart-rf is not enabled    if (!ap) return;    RADIO_TYPE rtype = AN_RADIO;    if (channel < 15) {        rtype = BGN_RADIO;    }    struct smradio *radio = find_radio_by_type(ap, rtype);    if (!radio) {        SMART_INFO("Terminating device "MACFORMAT" does not have radio of type %d", MAC2STR(ap->ap_mac), rtype);        return;    }    radio->is_terminating = on;,v
+ {,v
+void is_valid_terminator(struct dmx_device *device, int channel) {,V
+int is_smartrf_enabled(void) {,V
+',v
+rapcfg.air_term_ch,v
+00-15-70-C5-87-90,v
+An array of ints is a much better than an array of Integer objects, but this also generalizes to the fact that two parallel arrays of ints are also a lot more efficient than an array of (int,int) objects. The same goes for any combination of primitive types.,V
+        android:layout_gravity="right",V
+ ,v
+        android:layout_weight="10">,V
+0dp,v
+        android:layout_weight="10",V
+In this lesson you'll learn to use Hierarchy Viewer and Layoutopt to examine and optimize your layout.,V
+	        	android:src="@drawable/world" ,V
+35dp,v
+                android:layout_height="wrap_content",V
+                android:single_line="true",V
+wrap_content,v
+		 ,V
+    ,V
+ ,V
+ 		-->,V
+        </LinearLayout>,V
+                />,V
+                android:layout_gravity="center",V
+                android:visibility="invisible",V
+                android:textSize="10sp",V
+                android:text=" NSFW ",V
+                android:background="@color/nsfwbackground",V
+                android:textColor="@color/sred",V
+                android:layout_width="wrap_content",V
+                android:id="@+id/tvNsfw",V
+            <TextView,V
+            ,V
+          ,V
+                android:textColor="@color/syellow"/>,V
+                android:textSize="13sp" ,V
+                android:textAppearance="?android:attr/textAppearanceSmall",V
+                android:id="@+id/tvPrimary",V
+            android:orientation="horizontal">,V
+            android:layout_height="wrap_content",V
+            android:layout_width="wrap_content",V
+        <LinearLayout,V
+        <!-- ,V
+ Reply Reply All Forward		 Junk	Close 				Man I need some help for upgrading the falcon, it's tftp from boot is not workingSolanki Kunal-WXMT46Sent:	 Tuesday, June 18, 2013 12:44 PMTo:	Manoharan Deepak-HGNV38 ,v
+    ,v
+h,v
+c,v
+t,v
+a,v
+m,v
+setvisibility,v
+imageView,v
+            ,v
+                imageView.setVisibility(View.VISIBLE);,V
+	,v
+                },V
+                if (imageView.getVisibility() != View.VISIBLE) {,V
+       ,v
+		    lvh.ivButton.setImageResource(R.drawable.pulldown);,V
+		lvh.ivButton.setImageResource(R.drawable.pulldown);,V
+https://bitbucket.org/deeptrouble2/redditflow,v
+1,v
+-,v
+        mRequestQueue = Volley.newRequestQueue(context);        mImageLoader = new ImageLoader(mRequestQueue, new BitmapLruCache(MAX_IMAGE_CACHE_ENTIRES));,V
+first_heard,v
+tnow,v
+first_seen,v
+2,v
+3,v
+            PICKLE_DICT_U32(pk, "first_seen", tnow-intf->first_heard);,V
+{'00-04-96-4A-AD-90': {'bssid': '00-04-96-4A-AD-90',                       'channel': '1',                       'first_seen': 239,                       'is_interferer': False,                       'is_rogue': False,                       'rssi': '-81',                       'ssid': 'motorola-guest',                       'termination_active': False,                       'top_reporter_hostname': 'rfs4000-22A118',                       'vendor': 'Extreme Networks'},,V
+leaf vlan {            description "The VLAN assigned to the client";            type uint16;        },v
+        "vlan"            : Column("vlan",  5,      " VLAN"),,V
+http://www.sify.com/sports/cricket/champions-trophy/,v
+Dunno when it started, but will resume again at 2:15pm, there is a vote at 3pm for 4 amendments. With this rate I don't know when they will finish off the 100+ amendments remaining?,V
+N,v
+",v
+Y,v
+termination_active,v

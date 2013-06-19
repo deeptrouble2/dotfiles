@@ -18,8 +18,4 @@
   [key] mod = {"Super", "Shift"} key = "k" func = "client_swap_next"   [/key]
   [key] mod = {"Super", "Shift"} key = "j" func = "client_swap_prev"  [/key]
 
-  [key] mod = {"Ctrl", "Shift"} key = "k" func = "client_swap_left"   [/key]
-  [key] mod = {"Ctrl", "Shift"} key = "j" func = "client_swap_right"  [/key]
-
-
 [/keys]
